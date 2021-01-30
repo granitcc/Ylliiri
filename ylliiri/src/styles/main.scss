@@ -1,0 +1,20 @@
+//pages
+
+@import "pages/signin/index";
+@import "pages/selectcombox.scss";
+
+//carousel in home
+@import "pages/Home/Carouselhome/_slick.scss";
+@import "pages/Home/Carouselhome/_slickTheme.scss";
+//landing 
+@import "pages/Home/Landinghome/landing.scss";
+@import "pages/Home/Landinghome/landingpage.scss";
+//bloguu
+@import "pages/Blogu/blog.scss";
+
+//footer
+@import "pages/Footer/footer.scss";
+//sidebar
+@import "pages/Sidebar/sidebar.scss";
+//navbar
+@import "pages/NavBar/navbar.scss"
