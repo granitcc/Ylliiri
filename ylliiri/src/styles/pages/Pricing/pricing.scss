@@ -1,0 +1,223 @@
+.Pricinglanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+.HeadPricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.FirstPricingContent {
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridcontainerpricing {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  width: 1000px;
+  grid-auto-flow: column;
+  background-color: #131319;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  @media screen and(max-width:1024px) {
+    grid-template-columns: 200px 200px 200px 200px;
+    width: 800px;
+  }
+  @media screen and (max-width: 826px) {
+    grid-template-columns: 150px 150px 150px 150px;
+    width: 600px;
+  }
+  @media screen and (max-width: 614px) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+.donithing {
+  @media screen and (max-width: 614px) {
+    display: none;
+  }
+}
+.itemoneinpricing {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gridcontainerpricingg {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  width: 1000px;
+  grid-auto-flow: column;
+  background-color: #16161e;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  @media screen and(max-width:1024px) {
+    grid-template-columns: 200px 200px 200px 200px;
+    width: 800px;
+  }
+  @media screen and (max-width: 826px) {
+    grid-template-columns: 150px 150px 150px 150px;
+    width: 600px;
+  }
+  @media screen and (max-width: 614px) {
+    grid-template-columns: 100px 100px 100px 100px;
+    width: 400px;
+  }
+  @media screen and (max-width: 370px) {
+    grid-template-columns: 80px 80px 80px 80px;
+    width: 320px;
+  }
+}
+//for premium like hover
+.colorPremium {
+  background-color: #191921;
+  border-top: 2.5px solid #e68283;
+}
+.colorPremiumm {
+  background-color: #191921;
+  border-bottom: 2.5px solid #e68283;
+}
+.itemoneinpricingg {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+//to get text in center
+.doitcenter {
+  text-align: center;
+}
+.doitrow {
+  display: flex;
+  line-height: 0.1rem;
+}
+.dosomething {
+  line-height: 0rem;
+}
+//butons light
+
+.pricingbtn {
+  width: 150px;
+  font-size: 15px;
+  padding: 0.7rem 0.4rem 0.7rem 0.4rem;
+}
+//dark
+.pricingbtndark {
+  width: 150px;
+  font-size: 15px;
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  background-color: #202029;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  display: flex;
+}
+.fa-envelope-o {
+  color: #5a2fe6;
+}
+//planets in first grid
+.ppplanets {
+  position: relative;
+
+  .greenplanetinpricing {
+    position: absolute;
+    animation: tranlateplanet 4s alternate;
+    @media screen and(max-width:1024px) {
+      width: 100px;
+    }
+    @media screen and(max-width:524px) {
+      width: 50px;
+
+      left: 50px;
+    }
+  }
+  .greenplanetinpricing1 {
+    position: absolute;
+    right: 300px;
+    bottom: 150px;
+    width: 120px;
+    animation: tranlateplanet 9s alternate;
+    @media screen and(max-width:1024px) {
+      right: 150px;
+    }
+  }
+  .pinkplanetinpricing {
+    position: absolute;
+    right: -70px;
+    bottom: 20px;
+    animation: tranlateplanet 5s alternate;
+    @media screen and(max-width:524px) {
+      z-index: -1;
+      width: 70px;
+      bottom: 0px;
+      right: -100px;
+    }
+  }
+  .pinkplanetinpricing1 {
+    position: absolute;
+    right: 200px;
+    width: 80px;
+    bottom: -50px;
+    animation: tranlateplanet 6s alternate;
+    @media screen and(max-width:524px) {
+      z-index: -1;
+    }
+  }
+  .pinkplanetinpricing2 {
+    position: absolute;
+    right: 330px;
+    width: 80px;
+    bottom: 250px;
+    animation: tranlateplanet 8s alternate;
+    @media screen and(max-width:1024px) {
+      right: 230px;
+    }
+    @media screen and(max-width:524px) {
+      z-index: -1;
+    }
+  }
+  .bignplanetinpricing {
+    position: absolute;
+    width: 200px;
+    right: 70px;
+    bottom: 60px;
+    animation: tranlateplanet 7s alternate;
+    @media screen and(max-width:524px) {
+      z-index: -1;
+    }
+  }
+  .bignplanetinpricing1 {
+    position: absolute;
+    width: 100px;
+    right: 70px;
+    bottom: -60px;
+    animation: tranlateplanet 10s alternate;
+    @media screen and(max-width:524px) {
+      z-index: -1;
+    }
+  }
+  @keyframes tranlateplanet {
+    0% {
+      transform: translateX(-1000px);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+  }
+}

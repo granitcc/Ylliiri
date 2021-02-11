@@ -1,9 +1,9 @@
-// import yllilogo from '../../assets/images/yllilogo.png'
+// import yllilogo from '../../assets/images/yllilogo.webp'
 
 function Footercompfirst() {
-    return (
-        <div className="mobile-roww">
-        {/* <img src={yllilogo} height="60px" /> */}
+  return (
+    <div className="mobile-roww">
+      {/* <img src={yllilogo} height="60px" /> */}
       <div className="conntent">
         <strong>Visit Us</strong>
         <p className="street">
@@ -11,8 +11,8 @@ function Footercompfirst() {
           Rruga NoName NR.04
         </p>
       </div>
-    </div>  
-    )
+    </div>
+  );
 }
 
-export default Footercompfirst
+export default Footercompfirst;

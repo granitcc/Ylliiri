@@ -1,7 +1,6 @@
 .alllandingpageinonecontent {
   padding: 0rem 5rem 0rem 10rem;
   margin-bottom: 4rem;
-
   @media screen and (max-width: 1611px) {
     padding: 0rem;
   }
@@ -44,13 +43,23 @@
       flex-direction: column;
       padding-left: 0rem;
     }
-  
   }
   .girl {
     width: 400px;
     height: auto;
     z-index: 10;
-    // position: relative;
+    animation: doblur 2s alternate;
+
+    @keyframes doblur {
+      0% {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+      }
+      100% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+      }
+    }
   }
   .behindegirl {
     position: absolute;
@@ -59,18 +68,21 @@
     top: 40px;
     width: 350px;
     height: 350px;
-  
-    animation: zoominoutsinglefeatured 8s infinite;
+
+    animation: zoominoutsinglefeatured 6s infinite;
     //zoom in and out
     @keyframes zoominoutsinglefeatured {
       0% {
         transform: scale(1, 1);
+        opacity: 0.3;
       }
       50% {
         transform: scale(1.2, 1.2);
+        opacity: 1;
       }
       100% {
         transform: scale(1, 1);
+        opacity: 0.3;
       }
     }
   }
@@ -94,7 +106,7 @@
     z-index: 20;
     right: 300px;
     top: 330px;
-    width: 150px;
+    width: 70px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 
     animation: example 15s infinite;
@@ -104,23 +116,20 @@
         transform: scale(1, 1);
       }
       30% {
-        transform: scale(1.2, 1.2) translateX(60px);
+        transform: scale(1.2, 1.2) translateX(60px) rotate(360deg);
       }
 
       75% {
         transform: scale(1, 1) translateX(-60px);
       }
-      100%{
+      100% {
         transform: scale(1, 1) translateX(0px);
-
       }
     }
 
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
-      border:2px solid darkmagenta;
-      border-radius: 50%;
     }
   }
   .xballi {
@@ -128,14 +137,14 @@
     z-index: -20;
     right: -30px;
     top: 330px;
-    width: 150px;
+    width: 80px;
+    animation: example 10s infinite;
+
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
-      border:2px solid darkmagenta;
-      border-radius: 50%;
     }
   }
   .miniball {
@@ -143,8 +152,8 @@
     z-index: 13;
     right: 100px;
     top: 20px;
-    animation:exammple 10s infinite;
-  
+    animation: exammple 10s infinite;
+
     transition: width 2s, height 2s, background-color 2s, transform 2s;
     @keyframes exammple {
       0% {
@@ -167,11 +176,9 @@
     &:hover {
       cursor: pointer;
       transform: scale(1.7);
-      border:2px solid lightyellow;
-      border-radius: 50%;
     }
   }
- 
+
   .miniballi {
     position: absolute;
     z-index: 13;
@@ -179,13 +186,15 @@
     top: 90px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
     animation: examplee 7s infinite;
-   
+
     @keyframes examplee {
       0% {
         transform: scale(1, 1);
+        transform: rotate(0deg);
       }
-      25%{
-    transform:    translateX(30px);
+      25% {
+        transform: translateX(30px);
+        transform: rotate(360deg);
       }
       50% {
         transform: scale(1.2, 1.2) translateY(100px) translateX(40px);
@@ -193,41 +202,47 @@
 
       100% {
         transform: scale(1, 1) translateY(0px) translateX(0px);
+        transform: rotate(360deg);
       }
     }
     &:hover {
       cursor: pointer;
       transform: scale(1.7);
-      border:2px solid darkmagenta;
-      border-radius: 50%;
     }
+  }
+  .miniballi {
+    width: 60px;
+  }
+  .minibal {
+    width: 80px;
   }
   .xballe {
     position: absolute;
     z-index: 13;
     right: 300px;
     top: 120px;
+    width: 100px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
-    animation: exampleee 7s infinite;
+    animation: examplee 9s infinite;
+
     @keyframes exampleee {
       0% {
         transform: scale(0.7, 0.7);
+        transform: rotate(0deg);
       }
-   
+
       50% {
         transform: scale(1.2, 1.2);
+        transform: rotate(360deg);
       }
 
       100% {
-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
       }
     }
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
-      border:2px solid darkmagenta;
-      padding:0px;
-      border-radius: 50%;
     }
   }
   .relative {
@@ -272,10 +287,9 @@ transform: scale(0.7, 0.7);
       z-index: 33;
       top: 150px;
       left: 300px;
-      &:hover{
-        border:2px solid darkmagenta;
-        border-radius: 50%;
-        cursor:pointer;
+      width: 50px;
+      &:hover {
+        cursor: pointer;
       }
       transition: width 2s, height 2s, background-color 2s, transform 2s;
       animation: exampleeee 12s infinite;
@@ -283,9 +297,7 @@ transform: scale(0.7, 0.7);
         0% {
           transform: translateX(200px);
         }
-     
-       
-  
+
         100% {
           transform: translateX(0px);
         }
@@ -300,34 +312,33 @@ transform: scale(0.7, 0.7);
       position: absolute;
       z-index: -1;
       top: 50px;
-    
+      width: 70px;
     }
     .miniballiesk {
       position: absolute;
       z-index: -1;
       top: 50px;
       left: 450px;
-      &:hover{
-        border:2px solid darkmagenta;
-        border-radius: 50%;
+      width: 90px;
+      &:hover {
         cursor: pointer;
       }
       transition: width 2s, height 2s, background-color 2s, transform 2s;
-    animation: examplsee 4s infinite;
-   
-    @keyframes examplsee {
-      0% {
-        transform: scale(1, 1);
-      }
-    
-      50% {
-        transform: scale(1.3, 1.3);
-      }
+      animation: examplsee 4s infinite;
 
-      100% {
-        transform: scale(1, 1);
+      @keyframes examplsee {
+        0% {
+          transform: scale(1, 1);
+        }
+
+        50% {
+          transform: scale(1.3, 1.3) rotate(360deg);
+        }
+
+        100% {
+          transform: scale(1, 1);
+        }
       }
-    }
     }
     @media screen and (max-width: 1920px) {
       margin: 0px;
@@ -596,22 +607,22 @@ transform: scale(0.7, 0.7);
   text-align: center;
   margin-top: 4rem;
   flex-wrap: wrap;
-  .fmid {
-    font-size: 2.5rem;
-    // font-weight:bold;
+}
+.fmid {
+  font-size: 2.5rem;
+  // font-weight:bold;
 
-    @media screen and(max-width:700px) {
-      font-size: 2rem;
-    }
-    @media screen and(max-width:500px) {
-      font-size: 1.7rem;
-      flex-wrap: wrap;
-    }
+  @media screen and(max-width:700px) {
+    font-size: 2rem;
   }
-  .ffmid {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.486);
+  @media screen and(max-width:500px) {
+    font-size: 1.7rem;
+    flex-wrap: wrap;
   }
+}
+.ffmid {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.486);
 }
 .third-landing-page {
   display: flex;
@@ -637,29 +648,29 @@ transform: scale(0.7, 0.7);
     //image
     .xballlle {
       position: absolute;
-      z-index: -1;
-      left: 100px;
-      top: 200px;
-      &:hover{
-        border:2px solid darkmagenta;
-        border-radius: 50%;
+      z-index: 1;
+      width: 150px;
+      left: -50px;
+      top: -80px;
+      &:hover {
         cursor: pointer;
       }
       transition: width 2s, height 2s, background-color 2s, transform 2s;
-    animation: examplsee 4s infinite;
+      animation: examplsee 14s alternate;
     }
     .xballllee {
       position: absolute;
       z-index: -1;
-      &:hover{
-        border:2px solid darkmagenta;
-        border-radius: 50%;
+      &:hover {
         cursor: pointer;
       }
       transition: width 2s, height 2s, background-color 2s, transform 2s;
-    animation: examplsee 4s infinite;
+      animation: examplsee 17s alternate;
       // left:100px;
       // top:200px;
+      @media screen and (max-width: 415px) {
+        display: none;
+      }
     }
     @media screen and (max-width: 1299px) {
       flex-direction: column-reverse;
@@ -755,13 +766,13 @@ transform: scale(0.7, 0.7);
     // @media screen and (max-width: 600px) {
     //   width: 400px;
     // }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       width: 500px;
       height: auto;
     }
-    // @media screen and (max-width: 400px) {
-    //   width: 200px;
-    // }
+    @media screen and (max-width: 500px) {
+      width: 300px;
+    }
   }
   .absolutephone {
     position: absolute;
@@ -773,10 +784,19 @@ transform: scale(0.7, 0.7);
       right: 0px;
       left: 89px;
     }
+    @media screen and (max-width: 578px) {
+      left: 60px;
+    }
+    @media screen and (max-width: 485px) {
+      left: 0px;
+      top: -15px;
+      height: 340px;
+      width: 180px;
+    }
     @media screen and (max-width: 379px) {
       right: 0px;
-      top: 50px;
-      left: 109px;
+      top: -10px;
+      left: 10px;
     }
     &:hover {
       transition: all 0.2s ease-in-out;
@@ -843,6 +863,10 @@ transform: scale(0.7, 0.7);
       left: 200px;
       width: 70px;
       top: 60px;
+      @media screen and (max-width: 415px) {
+        top: 80px;
+        left: 220px;
+      }
     }
     .xixbballi {
       position: absolute;
@@ -850,7 +874,7 @@ transform: scale(0.7, 0.7);
       width: 120px;
       right: 800px;
       @media screen and (max-width: 500px) {
-        right: 0px;
+        display: none;
       }
     }
     @media screen and (max-width: 1300px) {
@@ -885,129 +909,6 @@ transform: scale(0.7, 0.7);
       width: 100%;
     }
   }
-  .alr-end {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    @media screen and (max-width: 506px) {
-      flex-direction: column;
-    }
-    .alr-firs {
-      display: flex;
-      flex-direction: column;
-      width: 90px;
-      align-items: center;
-      text-align: center;
-    }
-    .stick {
-      width: 300px;
-      height: 15px;
-      padding-left: 4rem;
-      padding-bottom: 2rem;
-      padding-right: 4rem;
-      @media screen and (max-width: 1149px) {
-        width: 100px;
-      }
-      @media screen and (max-width: 1024px) {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        width: 100px;
-      }
-      @media screen and (max-width: 506px) {
-        transform: rotate(90deg);
-        padding: 0rem;
-        border: none;
-        align-items: center;
-        margin: 3rem;
-      }
-    }
-    .logoo {
-      width: 90px;
-    }
-    .get {
-      font-size: 1rem;
-      font-weight: bold;
-      // color: white;
-    }
-  }
-  .switch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (max-width: 550px) {
-      margin: 0rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-left: 2.3rem;
-    }
-  }
-  .sin {
-    border-radius: 40px;
-    border: 1px solid white;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    margin-right: 2rem;
-    &:hover {
-      border: 1px solid darkmagenta;
-      background-color: rgba(90, 88, 90, 0.288);
-      cursor: pointer;
-      font-weight: bold;
-    }
-  }
-  .d {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    // font-weight:bold;
-
-    @media screen and(max-width:700px) {
-      font-size: 2rem;
-    }
-    @media screen and(max-width:500px) {
-      font-size: 1.7rem;
-      flex-wrap: wrap;
-
-      text-align: center;
-    }
-  }
-  .Questions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    .questionfirst {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  .read-more-link {
-    border-radius: 50px;
-    width: 25px;
-    height: 25px;
-    // color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 2px solid white;
-    &:hover {
-      border: 2px solid darkmagenta;
-      cursor: pointer;
-      color: darkgray;
-    }
-  }
-  .i {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: center;
-  }
-  .ii {
-    display: none;
-  }
 
   // .mainn{
   //     width:40%;
@@ -1038,6 +939,7 @@ transform: scale(0.7, 0.7);
       align-items: Center;
     }
     .lastdivone {
+      background-color: none;
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -1182,3 +1084,196 @@ transform: scale(0.7, 0.7);
 }
 
 //class="slick-arrow slick-prev"
+//for absolute image in photo2
+.photo2absolute {
+  position: absolute;
+  z-index: 22;
+  bottom: 250px;
+
+  @media screen and (max-width: 1270px) {
+    bottom: 230px;
+  }
+  @media screen and (max-width: 699px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 591px) {
+    bottom: 160px;
+  }
+  @media screen and (max-width: 495px) {
+    bottom: 120px;
+    width: 280px;
+  }
+  @media screen and (max-width: 399px) {
+    bottom: 80px;
+    width: 180px;
+  }
+}
+.photo22absolute {
+  position: absolute;
+  z-index: 22;
+  top: 350px;
+  left: 200px;
+  @media screen and (max-width: 1270px) {
+    top: 300px;
+  }
+  @media screen and (max-width: 699px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 591px) {
+    top: 220px;
+    left: 160px;
+  }
+  @media screen and (max-width: 495px) {
+    top: 150px;
+    left: 100px;
+    width: 250px;
+  }
+  @media screen and (max-width: 399px) {
+    top: 100px;
+    left: 50px;
+    width: 150px;
+  }
+}
+.pinkipinkplanet {
+  position: absolute;
+  z-index: 22;
+  width: 100px;
+  top: -90px;
+  animation: spin 12s alternate;
+  left: -90px;
+  @media screen and (max-width: 600px) {
+    z-index: -1;
+  }
+}
+.pinkplanetpink {
+  position: absolute;
+  z-index: 1;
+  animation: spin 20s alternate;
+  width: 100px;
+}
+
+.alr-firs {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  align-items: center;
+  text-align: center;
+}
+.alr-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: 506px) {
+    flex-direction: column;
+  }
+}
+.stick {
+  width: 300px;
+  height: 15px;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  @media screen and (max-width: 1149px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100px;
+  }
+  @media screen and (max-width: 506px) {
+    transform: rotate(90deg);
+    padding: 0rem;
+    border: none;
+    align-items: center;
+    margin: 3rem;
+  }
+}
+.logoo {
+  width: 90px;
+}
+.get {
+  font-size: 1rem;
+  font-weight: bold;
+  // color: white;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 550px) {
+    margin: 0rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 2.3rem;
+  }
+}
+
+.sin {
+  border-radius: 40px;
+  border: 1px solid white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-right: 2rem;
+  &:hover {
+    border: 1px solid darkmagenta;
+    background-color: rgba(90, 88, 90, 0.288);
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+.d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  // font-weight:bold;
+
+  @media screen and(max-width:700px) {
+    font-size: 2rem;
+  }
+  @media screen and(max-width:500px) {
+    font-size: 1.7rem;
+    flex-wrap: wrap;
+
+    text-align: center;
+  }
+}
+.Questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .questionfirst {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.read-more-link {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  // color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid white;
+  &:hover {
+    border: 2px solid darkmagenta;
+    cursor: pointer;
+    color: darkgray;
+  }
+}
+.i {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.ii {
+  display: none;
+}

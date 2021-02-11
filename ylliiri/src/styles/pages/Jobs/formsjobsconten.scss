@@ -1,0 +1,114 @@
+.action {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid gray;
+  max-width: 900px;
+  background-color: #00000046;
+
+  justify-content: center;
+  align-items: baseline;
+  @media screen and (max-width: 964px) {
+    max-width: 700px;
+  }
+  @media screen and (max-width: 554px) {
+    flex-direction: column;
+  }
+}
+.doitcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 4rem;
+  @media screen and (max-width: 964px) {
+    padding: 2rem;
+  }
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  align-items: baseline;
+  width: 370px;
+  margin-bottom: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  border-bottom: 2px solid lightgray;
+  @media screen and (max-width: 964px) {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 554px) {
+    max-width: 300px;
+  }
+}
+
+.icon {
+  padding: 10px;
+  background: transparent;
+  color: lightgray;
+  min-width: 20px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+// .input-field:focus {
+//   border: 2px solid dodgerblue;
+// }
+
+/* Set a style for the submit button */
+.bttnn {
+  white-space: space nowrap;
+  margin-top: 3rem;
+  width: 25%;
+  color: none;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 600px) {
+    width: 45%;
+  }
+}
+.bttnn:active {
+  border: 3px solid lightgreen;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.formcontent {
+  background-image: url(../../../assets/images/formjobs.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blackinback {
+  position: absolute;
+  width: 120%;
+  height: 45rem;
+}
+
+.head {
+  position: absolute;
+  left: 250px;
+  top: 290px;
+  z-index: 1;
+}
+.tale {
+  position: absolute;
+  z-index: 1;
+  left: -30px;
+  top: 300px;
+}

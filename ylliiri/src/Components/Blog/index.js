@@ -1,14 +1,13 @@
 import React from "react";
 import { FormattedDate } from "react-intl";
-import bigblog from "../../assets/images/bigblog.png";
-import miniblog from "../../assets/images/miniblog.png";
+import bigblog from "../../assets/images/bigblog.webp";
+import miniblog from "../../assets/images/miniblog.webp";
 import Footer from "../Footer";
 import Beforelastdivone from "../Landing/Beforelastdivone";
 import CarouselContainer from "../Landing/CarouselContainer";
 import Lastdivone from "../Landing/Lastdivone";
 import Demo4 from "../LandingPage";
-// import miniblog1 from "../../assets/images/miniblog1.png";
-
+// import miniblog1 from "../../assets/images/miniblog1.webp"
 function BlogPage() {
   // const people = [
   //     { img:bigblog,
@@ -101,7 +100,7 @@ function BlogPage() {
               <div className="large-blog-autore">{blogu.autore}</div>
               <div className="Read-moress">View Details</div>
             </div>
- 
+
             <div className="itemik" data-aos="fade-left">
               <img className="senior" src={blogu.images} />
 

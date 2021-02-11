@@ -1,0 +1,239 @@
+.ProductManagerComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  position: relative;
+  @media screen and (max-width: 415px) {
+    margin-top: 0rem;
+  }
+}
+//get some fade in land product page
+.fadinginproduct {
+  position: absolute;
+  z-index: -4;
+  width: 1000px;
+  right: 1300px;
+}
+.fadinginproduct1 {
+  position: absolute;
+  z-index: -4;
+  width: 1000px;
+  top: 1000px;
+  left: 1300px;
+}
+.SecondProductContent {
+  margin-top: 4rem;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+  gap: 40px;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    gap: 20px;
+  }
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.doitreverse {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+  gap: 40px;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    gap: 20px;
+  }
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.behindeproduct1 {
+  width: 500px;
+
+  @media screen and (max-width: 1024px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 524px) {
+    width: 300px;
+  }
+}
+.product1 {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+  left: 80px;
+  top: 50px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 270px;
+  }
+  @media screen and (max-width: 524px) {
+    width: 200px;
+    left: 60px;
+    top: 30px;
+  }
+}
+
+.doitrelativeas {
+  position: relative;
+}
+.pinkplanetinproduct {
+  position: absolute;
+  right: 1300px;
+  bottom: 360px;
+  animation: rotate 6s alternate;
+  @media screen and (max-width: 1024px) {
+    right: 700px;
+    bottom: 300px;
+  }
+  @media screen and (max-width: 524px) {
+    right: 300px;
+    bottom: 300px;
+  }
+}
+.greenplanetinproduct {
+  position: absolute;
+  width: 70px;
+  left: 1100px;
+  animation: rotate 6s alternate;
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0rad);
+    }
+    100% {
+      transform: rotateY(3.142rad);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    width: 70px;
+    left: 750px;
+  }
+  @media screen and (max-width: 524px) {
+    width: 40px;
+    left: 290px;
+    top: 340px;
+  }
+}
+.bigplanetinproduct {
+  position: absolute;
+  width: 130px;
+  left: 1300px;
+  bottom: 300px;
+  animation: spin 10s alternate;
+  @media screen and (max-width: 1024px) {
+    left: 700px;
+  }
+  @media screen and (max-width: 524px) {
+    left: 250px;
+    z-index: -3;
+  }
+}
+//planets in third content
+.greenplanetinproduct1 {
+  position: absolute;
+  z-index: 1;
+  left: -100px;
+  bottom: 320px;
+  transform: rotate(150deg);
+  @media screen and (max-width: 1023px) {
+    left: -100px;
+    bottom: 260px;
+  }
+  @media screen and (max-width: 524px) {
+    width: 150px;
+    bottom: 190px;
+  }
+}
+.pinkplanetinproduct1 {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-260deg);
+  left: 450px;
+  bottom: 320px;
+  @media screen and (max-width: 1023px) {
+    left: 350px;
+    bottom: 260px;
+  }
+  @media screen and (max-width: 524px) {
+    left: 250px;
+    bottom: 180px;
+  }
+}
+.contentproductinleft {
+  width: 50%;
+  @media screen and (max-width: 1023px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 523px) {
+    width: 80%;
+  }
+}
+.pfirstcontent {
+  text-align: center;
+}
+
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+[data-aos="rotate-y"] {
+  transform: rotateY(80deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-y"].aos-animate {
+  transform: rotateY(0deg);
+}

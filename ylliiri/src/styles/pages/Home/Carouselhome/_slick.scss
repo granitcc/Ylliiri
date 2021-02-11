@@ -1,39 +1,34 @@
 /* Slider */
 .slick-slider {
   position: relative;
-  width: 50rem; 
-  height:20rem;
-  @media screen and (max-width:1200px){
-     width:30rem;
-     height:25rem;
-        
+  width: 50rem;
+  height: 20rem;
+  @media screen and (max-width: 1200px) {
+    width: 30rem;
+    height: 25rem;
   }
-  @media screen and (max-width:556px){
-    width:25rem;
-    height:19.7rem;
-    
-       
- }
-//   @media screen and (max-width:376px){
-//     width:23rem;
-       
-//  }
+  @media screen and (max-width: 556px) {
+    width: 25rem;
+    height: 19.7rem;
+  }
+  //   @media screen and (max-width:376px){
+  //     width:23rem;
+
+  //  }
   box-sizing: border-box;
-border:none;
-background-color: transparent;
+  border: none;
+  background-color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow:hidden;
+  overflow: hidden;
   align-items: center;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-
-  
 }
 
 .slick-list {
@@ -42,7 +37,6 @@ background-color: transparent;
   display: flex;
   overflow: hidden;
   margin: 0;
-  
 }
 .slick-list:focus {
   outline: none;

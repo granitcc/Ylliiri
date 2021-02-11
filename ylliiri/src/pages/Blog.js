@@ -1,10 +1,10 @@
-import React from 'react'
-import Blogu from '../Components/Blog/index'
+import React from "react";
+import Blogu from "../Components/Blog/index";
 
 export default function BlogPage() {
-    return (
-        <div>
-           <Blogu />
-        </div>
-    )
+  return (
+    <div>
+      <Blogu />
+    </div>
+  );
 }

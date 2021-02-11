@@ -6,13 +6,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media screen and (max-width:1088px){
+  @media screen and (max-width: 1088px) {
     padding: 8rem 5rem 4rem 5rem;
   }
-  @media screen and (max-width:415px){
-  padding-top:5rem;
-    
-     }
+  @media screen and (max-width: 415px) {
+    padding-top: 5rem;
+  }
 
   // .imgblogu{
   //     max-width:1050px;
@@ -21,12 +20,12 @@
     padding: 1rem 1rem 0.4rem 1rem;
     background-color: #1b1d28;
     border-radius: 10px;
-    @media screen and (max-width:568px){
-       width:130%;
-        }
-        @media screen and (max-width:415px){
-            width:145%;
-             }
+    @media screen and (max-width: 568px) {
+      width: 130%;
+    }
+    @media screen and (max-width: 415px) {
+      width: 145%;
+    }
   }
   .company-news {
     color: #5a2ded;
@@ -77,28 +76,26 @@
   grid-column-gap: 70px;
   background-color: transparent;
   padding: 20px;
-  @media screen and (max-width:788px){
-  grid-column-gap:20px;
-  padding: 0px;
+  @media screen and (max-width: 788px) {
+    grid-column-gap: 20px;
+    padding: 0px;
   }
-  @media screen and (max-width:568px){
+  @media screen and (max-width: 568px) {
     grid-template-columns: auto;
-    }
+  }
 }
 
-.itemik{
-    @media screen and (max-width:415px){
-       width:20rem;
-        text-align: center;
-        
-         }
+.itemik {
+  @media screen and (max-width: 415px) {
+    width: 20rem;
+    text-align: center;
+  }
 }
 .grid-containeris > itemik {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
- 
 }
 
 .large-blog-title {
@@ -139,6 +136,7 @@
   padding: 0px;
 }
 .lastdivone {
+  background-color: none;
   flex-direction: column;
   justify-content: center;
   text-align: Center;
@@ -158,7 +156,7 @@
     padding-top: 2rem;
   }
 }
-.senior{
-    width: 100%;
-    height:auto;
+.senior {
+  width: 100%;
+  height: auto;
 }

@@ -1,62 +1,60 @@
-.toki{
+.toki {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+  .bold {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .column {
     display: flex;
+
+    flex-direction: column;
+    width: 100%;
+    @media screen and(max-width:800px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:35%;
-    @media screen and (max-width:550px){
-        width:100%;
+    width: 100%;
+  }
+  .offi {
+    display: flex;
+    align-items: center;
+    color: darkmagenta;
+    justify-content: center;
+    border: 2px solid rgb(192, 164, 164);
+    border-radius: 50px;
+    padding: 0.7rem;
+    // color:white;
+    background-color: transparent;
+    font-weight: bold;
+    width: 5px;
+    height: 5px;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid darkmagenta;
     }
-    .bold{
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .column{
-        display: flex;
-        
-        flex-direction: column;
-        width:100%;
-        @media screen and(max-width:800px){
-            justify-content: center;
-            align-items: center;
-            
-        }
-    }
-    .row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width:100%;
-    }
-    .offi{
-        display: flex;
-        align-items: center;
-        color:darkmagenta;
-        justify-content: center;
-        border:2px solid rgb(192, 164, 164);
-        border-radius: 50px;
-        padding:0.7rem;
-        // color:white;
-        background-color: transparent;
-        font-weight: bold;
-        width:5px;
-        height: 5px;
-        &:hover{
-            cursor: pointer;
-            border:2px solid darkmagenta;
-        }
-    }
-    .questions{
-      
-        border-radius: 50px;
-        padding:0.2rem 0.4rem 0.2rem 0.4rem;
-        // color:#788CA0;
-        background-color: rgb(48, 45, 45);
-        font-weight: bold;
-        width:5px;
-        height: 3px;
-    }
- }
- *:focus {
-    outline: none;
+  }
+  .questions {
+    border-radius: 50px;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    // color:#788CA0;
+    background-color: rgb(48, 45, 45);
+    font-weight: bold;
+    width: 5px;
+    height: 3px;
+  }
+}
+*:focus {
+  outline: none;
 }

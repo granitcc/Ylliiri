@@ -1,169 +1,180 @@
-.slide{
-    position: relative;
-    animation: myfirst 3s 1;
-    animation: 
-    nudge 2.3s linear  alternate;
+.slide {
+  position: relative;
+  animation: myfirst 3s 1;
+  animation: nudge 2.3s linear alternate;
   border-radius: 30px;
 
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
 
-@keyframes pulse {
-  -100%, 0% {
-  }
-  50% {
-  }
-}
+  @keyframes nudge {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
 
-@keyframes nudge {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  
-  40% {
-    transform: translate(-950px, 0);
+    40% {
+      transform: translate(-950px, 0);
+    }
   }
 }
-}
-.slide1{
-    position:relative;
-    animation: mysecond 1s 1;
-    animation:nudge 2.4s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
-}
-.slide2{
-    position:relative;
-    animation: mythird 1s 1;
-    animation:nudgeee 2.5s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgeee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
-}
+.slide1 {
+  position: relative;
+  animation: mysecond 1s 1;
+  animation: nudge 2.4s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
 
-.slide3{
-    position:relative;
-    animation: mythirdd 1s 1;
-    animation:nudgeeee 2.6s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgeeee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
+  @keyframes nudgee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
+}
+.slide2 {
+  position: relative;
+  animation: mythird 1s 1;
+  animation: nudgeee 2.5s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
+
+  @keyframes nudgeee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
 }
 
-.slide4{
-    position:relative;
-    animation: mythirdi 1s 1;
-    animation:nudgeeeee 2.7s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgeeeee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
+.slide3 {
+  position: relative;
+  animation: mythirdd 1s 1;
+  animation: nudgeeee 2.6s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
+
+  @keyframes nudgeeee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
 }
-.slide5{
-    position:relative;
-    animation: mythirdii 1s 1;
-    animation:nudgeeeeee 2.8s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgeeeeee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
+
+.slide4 {
+  position: relative;
+  animation: mythirdi 1s 1;
+  animation: nudgeeeee 2.7s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
+
+  @keyframes nudgeeeee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
 }
-.slide6{
-    position:relative;
-    animation: mythirdiie 1s 1;
-    animation:nudgeeeeeee 2.9s linear  alternate;
-    border-radius: 100%;
-    @keyframes pulse {
-        -100%, 0% {
-        }
-        50% {
-        }
-      }
-      
-      @keyframes nudgeeeeeee {
-        0%, 100% {
-          transform: translate(0, 0);
-        }
-        
-        40% {
-          transform: translate(-950px, 0);
-        }
-      }
+.slide5 {
+  position: relative;
+  animation: mythirdii 1s 1;
+  animation: nudgeeeeee 2.8s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
+
+  @keyframes nudgeeeeee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
 }
-.Changeforside{
-  color:white;
+.slide6 {
+  position: relative;
+  animation: mythirdiie 1s 1;
+  animation: nudgeeeeeee 2.9s linear alternate;
+  border-radius: 100%;
+  @keyframes pulse {
+    -100%,
+    0% {
+    }
+    50% {
+    }
+  }
+
+  @keyframes nudgeeeeeee {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+      transform: translate(-950px, 0);
+    }
+  }
+}
+.Changeforside {
+  color: white;
   text-decoration: none;
-    transform: rotate(360deg);
-a:visited,
-a:active
-{
-  color:white;
-}
+  transform: rotate(360deg);
+  a:visited,
+  a:active {
+    color: white;
+  }
 }

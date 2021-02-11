@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "../../styles/pages/Home/Carouselhome/_slick.scss";
 import "../../styles/pages/Home/Carouselhome/_slickTheme.scss";
-import Ssv from "../../assets/images/Ssv.png";
-import Sssv from "../../assets/images/Sssv.png";
+import Ssv from "../../assets/images/Ssv.webp";
+import Sssv from "../../assets/images/Sssv.webp";
 import { FormattedMessage } from "react-intl";
-
 
 export default class CarouselContainer extends Component {
   render() {
@@ -25,11 +24,11 @@ export default class CarouselContainer extends Component {
           <div className="hellki">
             <div className="underhellki">
               <p>
-              <FormattedMessage id="CarouselContainer.first" />
+                <FormattedMessage id="CarouselContainer.first" />
               </p>
               <div className="tresk">
                 {" "}
-                <img src={Ssv} className="Ssv" />
+                <img src={Ssv} alt="llogo" className="Ssv" />
               </div>
               <div className="twoinone">
                 <p className="doitbold">Michal Seibeld</p>
@@ -40,29 +39,11 @@ export default class CarouselContainer extends Component {
           <div className="hellki">
             <div className="underhellki">
               <p>
-              <FormattedMessage id="CarouselContainer.first" />
-
+                <FormattedMessage id="CarouselContainer.first" />
               </p>
               <div className="tresk">
                 {" "}
-                <img src={Sssv} className="Ssv" />
-              </div>
-
-              <div className="twoinone">
-                <p className="doitbold">Michal Seibeld</p>
-                <p>@SquareFlaier</p>
-              </div>
-            </div>
-          </div>
-          <div className="hellki">
-            <div className="underhellki">
-              <p>
-              <FormattedMessage id="CarouselContainer.first" />
-
-              </p>
-              <div className="tresk">
-                {" "}
-                <img src={Sssv} className="Ssv" />
+                <img src={Sssv} alt="llogo" className="Ssv" />
               </div>
 
               <div className="twoinone">
@@ -74,12 +55,27 @@ export default class CarouselContainer extends Component {
           <div className="hellki">
             <div className="underhellki">
               <p>
-              <FormattedMessage id="CarouselContainer.first" />
-
+                <FormattedMessage id="CarouselContainer.first" />
               </p>
               <div className="tresk">
                 {" "}
-                <img src={Ssv} className="Ssv" />
+                <img src={Sssv} alt="llogo" className="Ssv" />
+              </div>
+
+              <div className="twoinone">
+                <p className="doitbold">Michal Seibeld</p>
+                <p>@SquareFlaier</p>
+              </div>
+            </div>
+          </div>
+          <div className="hellki">
+            <div className="underhellki">
+              <p>
+                <FormattedMessage id="CarouselContainer.first" />
+              </p>
+              <div className="tresk">
+                {" "}
+                <img src={Ssv} alt="llogo" className="Ssv" />
               </div>
 
               <div className="twoinone">

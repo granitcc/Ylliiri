@@ -3,12 +3,14 @@ import React, { Component } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FormattedMessage } from "react-intl";
 import Reviewleft from "../../assets/svgicon/Footersvgicon/Reviewleft";
-import miniball from '../../assets/images/miniball.png'
+import miniball from "../../assets/images/miniball.webp";
+
 import Footercompfirst from "./FooterComp";
 import { FooterCompSecond } from "./FooterCompS";
 import FooterComponentThird from "./FooterCompTh";
-import absolutefooter from '../../assets/images/absolutefooter.png'
-import paki from '../../assets/images/paki.png'
+import absolutefooter from "../../assets/images/absolutefooter.webp";
+
+import paki from "../../assets/images/paki.webp";
 
 import CallToggle from "../../CallToggle";
 const Footer = () => {
@@ -113,43 +115,43 @@ const Footer = () => {
         <hr />
         <div className="Footer-end">
           <div className="footer-end-first">
-          <img src={miniball} className="miniballek" />
+            <img src={miniball} alt="llogo" className="miniballek" />
             <Footercompfirst />
-             <img src={miniball} className="miniballek1" />
+            <img src={miniball} alt="llogo" className="miniballek1" />
             <div className="doItflex">
               <strong>Light{"|"}Dark</strong>
               <CallToggle />
             </div>
-            <img src={miniball} className="miniballek5" />
-            <img src={miniball} className="miniballek3" />
+            <img src={miniball} alt="llogo" className="miniballek5" />
+            <img src={miniball} alt="llogo" className="miniballek3" />
             <FooterCompSecond />
-             <img src={miniball} className="miniballek4" />
+            <img src={miniball} alt="llogo" className="miniballek4" />
             <FooterComponentThird />
-            <img src={miniball} className="miniballek2" />
-            <img src={absolutefooter} className="absolutefooter"/>
+            <img src={miniball} alt="llogo" className="miniballek2" />
+            <img src={absolutefooter} alt="llogo" className="absolutefooter" />
 
-            <img src={paki} className="absolutefooteer"/>
-
+            <img src={paki} alt="llogo" className="absolutefooteer" />
           </div>
           <div className="social">
-           <div className="socialone">
-            <span className="social-item">
-              <FaFacebook />
-            </span>
-            <span className="social-item">
-              <FaTwitter />
-            </span>
-            <span className="social-item">
-              <FaInstagram />
-            </span>
-            <span className="social-item">
-              <FaYoutube />
-            </span></div>
+            <div className="socialone">
+              <span className="social-item">
+                <FaFacebook />
+              </span>
+              <span className="social-item">
+                <FaTwitter />
+              </span>
+              <span className="social-item">
+                <FaInstagram />
+              </span>
+              <span className="social-item">
+                <FaYoutube />
+              </span>
+            </div>
             <div classsName="socialtwo">
-            Copyright © {new Date().getFullYear()} ylliri. All rights reserved.
+              Copyright © {new Date().getFullYear()} ylliri. All rights
+              reserved.
             </div>
           </div>
-       
         </div>
         {/* <div className="ilusion">
           <div className="ilusionleft">

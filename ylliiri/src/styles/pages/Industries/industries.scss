@@ -1,0 +1,416 @@
+.IndustriesComponents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  position: relative;
+  @media screen and (max-width: 624px) {
+    margin-top: 4rem;
+  }
+}
+
+.pathinindustries {
+  position: absolute;
+  opacity: 0.3;
+  left: 900px;
+  top: 200px;
+}
+.pathinindustriesleft {
+  position: absolute;
+  opacity: 0.3;
+  top: 600px;
+  right: 1100px;
+}
+.fadinginindustries {
+  position: absolute;
+  width: 550px;
+  right: 600px;
+  opacity: 0.5;
+}
+.fadinginindustriesright {
+  position: absolute;
+  width: 600px;
+  left: 600px;
+  top: 300px;
+  opacity: 0.5;
+}
+.IndustriesFristContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 624px) {
+    width: 100%;
+  }
+}
+.IndustriesSecondContent {
+  position: relative;
+  .pinkplanetinsencond {
+    position: absolute;
+    z-index: 20;
+    animation: comefromleft 4s alternate;
+    @keyframes comefromleft {
+      0% {
+        transform: translateX(-700px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  }
+  .pinkplanetinsencond1 {
+    position: absolute;
+    z-index: 20;
+    width: 70px;
+    top: 150px;
+    left: -59px;
+    transform: rotateX(-180deg);
+    animation: comefromleft 7s alternate;
+  }
+  .pinkplanetinsencond2 {
+    position: absolute;
+    z-index: 20;
+    width: 40px;
+    top: 250px;
+    left: 100px;
+    transform: rotateY(180deg);
+    animation: comefromleft 3s alternate;
+  }
+  .pinkplanetinsencondright {
+    position: absolute;
+    z-index: 20;
+    transform: rotateX(80deg);
+    &:hover {
+      cursor: pointer;
+      transform: translateX(180deg);
+    }
+  }
+}
+.greenplanethirdindustries {
+  position: absolute;
+  z-index: -1;
+  animation: spin 10s alternate;
+  @media screen and (max-width: 1024px) {
+    width: 100px;
+    bottom: 150px;
+    left: 400px;
+  }
+}
+.bbesbuton {
+  padding: 1.3rem 2.3rem 1.3rem 2.3rem;
+  background-color: #6232fd;
+  color: white;
+  font-weight: 400;
+  border: none;
+  border-radius: 40px;
+  width: 30%;
+  font-size: 1.2rem;
+  white-space: nowrap;
+
+  @media screen and (max-width: 624px) {
+    width: 60%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #6132fd96;
+    transition: all 0.2s ease-in-out;
+    color: wheat;
+    font-weight: bold;
+    transform: scale(0.9);
+  }
+}
+
+.behindeindustries {
+  width: 800px;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  @media screen and (max-width: 818px) {
+    width: 700px;
+  }
+  @media screen and (max-width: 718px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 518px) {
+    width: 400px;
+  }
+}
+
+.absolutefirstphoneindustries {
+  position: absolute;
+  z-index: 20;
+  width: 250px;
+  left: 80px;
+  top: 120px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 524px) {
+    height: 350px;
+  }
+}
+
+.absolutesecondphoneindustries {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+  left: 180px;
+  top: 50px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 490px;
+  }
+  @media screen and (max-width: 524px) {
+    height: 420px;
+    width: 270px;
+  }
+}
+
+.behndephoneindustries {
+  width: 450px;
+}
+.absolutesixindustries {
+  position: absolute;
+  z-index: 22;
+  left: 170px;
+  bottom: 250px;
+  &:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.051);
+  }
+  @media screen and (max-width: 1024px) {
+    bottom: 210px;
+    left: 140px;
+    width: 400px;
+  }
+  @media screen and (max-width: 924px) {
+    bottom: 200px;
+    left: 100px;
+    width: 400px;
+  }
+  @media screen and (max-width: 523px) {
+    bottom: 150px;
+    left: 60px;
+    width: 300px;
+  }
+}
+.hovers {
+  &:hover {
+    cursor: pointer;
+    transition: 0.45s ease-in-out;
+    transform: scale(1.05);
+    border-radius: 140px;
+  }
+}
+
+//aniamtion in scroll
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+[data-aos="rotate-y"] {
+  transform: rotateY(80deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-y"].aos-animate {
+  transform: rotateY(0deg);
+}
+.IndustriesEightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  @media screen and (max-width: 1000px) {
+    width: 250px;
+  }
+}
+
+.imdoingrelative {
+  position: relative;
+}
+.photoone {
+  position: absolute;
+  z-index: 22;
+  padding: 0.6rem 0rem 0rem 0.6rem;
+}
+.tagletwo {
+  position: relative;
+}
+.flex {
+  display: flex;
+  gap: 50px;
+  margin-top: 5rem;
+  @media screen and (max-width: 1000px) {
+    gap: 0px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.pinkplanetindustries {
+  animation: absolutero 14s infinite;
+  width: 50px;
+  position: absolute;
+}
+.bigplanetinindnustries {
+  // position:absolute
+  animation: absolutero 12s infinite;
+  width: 130px;
+}
+.pinkplanetinindustries2 {
+  position: absolute;
+  animation: absolutero 8s infinite;
+  left: 900px;
+  width: 70px;
+}
+.greenplanetinindustries3 {
+  position: absolute;
+  width: 90px;
+  animation: absolutero 16s infinite;
+  left: 900px;
+}
+.pinkplanetinindustries4 {
+  position: absolute;
+  width: 110px;
+  animation: absolutero 19s infinite;
+  left: -800px;
+}
+.greenplanetinindustries5 {
+  position: absolute;
+
+  animation: absolutero 8s infinite;
+  right: 400px;
+  bottom: 40px;
+}
+.greenplanetinindustries6 {
+  position: absolute;
+  top: 50px;
+  left: -900px;
+  animation: absolutero 11s infinite;
+}
+.pinkplanetinindustries7 {
+  position: absolute;
+  top: 50px;
+  left: -700px;
+  animation: absolutero 16s infinite;
+}
+
+.greenplanetinindustries1 {
+  position: absolute;
+  animation: absolutero 10s infinite;
+  @keyframes absolutero {
+    0% {
+      transform: translate(-1000px) rotate(-180deg);
+      opacity: 1;
+    }
+    20% {
+      opacity: 0.6;
+    }
+    40% {
+      opacity: 1;
+    }
+
+    50% {
+      transform: rotate(0deg);
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(1000px) translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+.doitcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttoninindustries {
+  background-color: transparent;
+  border: 1.2px solid #23272e;
+  border-radius: 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  color: #788ca0;
+  align-items: center;
+  display: flex;
+}
+
+.autor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.blackfade {
+  z-index: 888;
+  width: 100%;
+  position: absolute;
+  top: 24rem;
+  @media screen and (max-width: 416px) {
+    display: none;
+  }
+}
+.doitrelative {
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

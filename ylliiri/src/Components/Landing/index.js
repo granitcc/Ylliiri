@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-
-// import "./landing.scss";
-
 import CarouselContainer from "../Landing/CarouselContainer";
 import Demo4 from "../LandingPage/index";
 import Aos from "aos";
@@ -41,16 +38,16 @@ const Landing = () => {
           <Contentsix />
           <Contetnuseformid />
           <div>
-          <Ssvgcomp />
+            <Ssvgcomp />
           </div>
           <Inmidone />
           <Demo4 />
-           <Beforelastdivone />
-           <div className="gos-in">
-          <CarouselContainer />
+          <Beforelastdivone />
+          <div className="gos-in">
+            <CarouselContainer />
           </div>
           <div className="lastdiv">
-          <Lastdivone />
+            <Lastdivone />
           </div>
         </div>
       </div>
